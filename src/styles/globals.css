@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,9 +11,10 @@
   /* Your default theme */
   --background: white;
   --foreground: black;
+  /* transition: all .5s ease; */
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background: black;
   --foreground: white;
 }

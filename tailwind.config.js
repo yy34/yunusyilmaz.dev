@@ -10,6 +10,9 @@ module.exports = {
 
   theme: {
     extend: {
+      colors: {
+        crio: "#dc143c",
+      },
       typography: {
         quoteless: {
           css: {
@@ -20,14 +23,17 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
+        sarala: ["Sarala", ...defaultTheme.fontFamily.sans],
       },
+
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
         "fade-in": "fade-in 3s ease-in-out forwards",
-        title: "title 3s ease-out forwards",
+        "fade-in-short": "fade-in .7s ease-in-out forwards",
+        title: "title 2s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
       },
@@ -79,6 +85,7 @@ module.exports = {
           },
           "25%": {
             "line-height": "0%",
+            "letter-spacing": "0.15em",
             opacity: "0%",
           },
           "80%": {
