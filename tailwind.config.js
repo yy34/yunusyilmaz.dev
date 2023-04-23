@@ -13,23 +13,12 @@ module.exports = {
       colors: {
         crio: "#dc143c",
       },
-      typography: {
-        quoteless: {
-          css: {
-            "blockquote p:first-of-type::before": { content: "none" },
-            "blockquote p:first-of-type::after": { content: "none" },
-          },
-        },
-      },
+
       fontFamily: {
         sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
         sarala: ["Sarala", ...defaultTheme.fontFamily.sans],
       },
 
-      backgroundImage: {
-        "gradient-radial":
-          "radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
-      },
       animation: {
         "fade-in": "fade-in 3s ease-in-out forwards",
         "fade-in-short": "fade-in .7s ease-in-out forwards",
@@ -79,13 +68,11 @@ module.exports = {
         },
         title: {
           "0%": {
-            "line-height": "0%",
-            "letter-spacing": "0.25em",
+            "letter-spacing": "0.115em",
             opacity: "0",
           },
           "25%": {
-            "line-height": "0%",
-            "letter-spacing": "0.15em",
+            "letter-spacing": "0.225em",
             opacity: "0%",
           },
           "80%": {
@@ -93,16 +80,10 @@ module.exports = {
           },
 
           "100%": {
-            "line-height": "100%",
             opacity: "100%",
           },
         },
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/line-clamp"),
-    require("@tailwindcss/typography"),
-    require("tailwindcss-debug-screens"),
-  ],
 };
