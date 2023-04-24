@@ -8,13 +8,15 @@
   }
 }
 :root {
-  /* Your default theme */
   --background: white;
   --foreground: black;
-  /* transition: all .5s ease; */
+  transition: all 0.5s ease;
 }
 
 [data-theme="dark"] {
   --background: black;
   --foreground: white;
+}
+.dark {
+  background-color: #121212;
 }
