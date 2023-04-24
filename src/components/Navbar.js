@@ -1,18 +1,26 @@
 import Link from "next/link";
 import { Navigation } from "../data/Links";
+import { useRouter } from "next/router";
 
 export const Navbar = () => {
+  const router = useRouter();
   return (
     <header>
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
-          {Navigation.map((item) => (
+      <nav className="mt-2">
+        <ul className="flex items-center justify-center">
+          {Navigation.map((nav) => (
             <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-lg px-3 py-2 hover:bg-slate-100 hover:text-black"
+              key={nav.href}
+              href={nav.href}
+              className="font-sarala text-base font-bold rounded-lg px-3 py-2 hover:bg-slate-100 hover:text-black"
             >
-              {item.name}
+              <span
+                className={`cursor-pointer ${
+                  router.pathname === nav.href ? "text-purp" : ""
+                }`}
+              >
+                {nav.name}
+              </span>
             </Link>
           ))}
         </ul>

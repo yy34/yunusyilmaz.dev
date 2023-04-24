@@ -29,22 +29,6 @@ export const GITHUB = {
   href: "https://github.com/yy34/yunusyilmaz.dev",
   icon: "openmoji:github",
 };
-export const TOOLS = {
-  development: [
-    {
-      title: "TypeScript",
-      icon: "Doe",
-    },
-    {
-      title: "TypeScript",
-      icon: "Doe",
-    },
-    {
-      title: "TypeScript",
-      icon: "Doe",
-    },
-  ],
-};
 
 export const Navigation = [
   // { name: "Projects", href: "" },
