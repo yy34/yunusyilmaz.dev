@@ -19,8 +19,10 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
-        sarala: ["Sarala", ...defaultTheme.fontFamily.sans],
+        // sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
+        // sarala: ["Sarala", ...defaultTheme.fontFamily.sans],
+        sans: ["Ubuntu"],
+        sarala: ["Ubuntu"],
       },
 
       animation: {
