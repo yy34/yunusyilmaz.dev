@@ -1,4 +1,4 @@
-export const Education = [
+export const Educations = [
   {
     date: "2016 / 2021",
     university: "Selcuk University",
@@ -12,7 +12,7 @@ export const Education = [
   },
 ];
 
-export const WorkExperience = [
+export const WorkExperiences = [
   {
     date: "July 2022 / ",
     total: "present",
