@@ -7,11 +7,15 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
 
   theme: {
     extend: {
       colors: {
-        crio: "#dc143c",
+        hwred: "#dc143c",
+        purp: "#9E4784",
+        crio: "#212f45",
+        clare: "#3e1f47",
       },
 
       fontFamily: {
