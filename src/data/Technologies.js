@@ -12,7 +12,7 @@ export const Frontend = [
     icon: "skill-icons:vuejs-dark",
   },
   {
-    name: "AngularJS",
+    name: "Angular",
     icon: "vscode-icons:file-type-angular",
   },
   {

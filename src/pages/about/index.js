@@ -16,7 +16,7 @@ export default function Index() {
                 alt="Yunus Yilmaz"
                 className="h-32 w-32 object-cover rounded-full flex-shrink-0"
               />
-              <div>
+              <div className="hidden">
                 <div className="font-extrabold">Yunus YILMAZ</div>
                 <div className="text-sm font-light text-center text-gray-500">
                   1996 - Istanbul

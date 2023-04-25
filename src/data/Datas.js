@@ -1,13 +1,13 @@
 export const Educations = [
   {
     date: "2016 / 2021",
-    university: "Selcuk University",
+    school: "Selcuk University",
     department: "Computer Engineering",
     grade: 3.15,
   },
   {
     date: "2011 / 2015",
-    university: "Umraniye Anatolian Vocational High School",
+    school: "Umraniye Anatolian Vocational High School",
     department: "Database Programming",
   },
 ];
@@ -20,11 +20,11 @@ export const WorkExperiences = [
     company: "Huawei",
     title: "Software Engineer",
     desc: `Worked on projects using Vuetify, Vue.js and built-in database tools via AppCube which is a Huawei low-code application.
-    Transforming app designs into front-end code with Vue.js and AngularJS.
+    Transforming app designs into front-end code with Vue.js and Angular.
     Working with backend developers to integrate UI components with APIs and databases.
     Debugging, troubleshooting and performing routine performance optimizations.
     Making code reviews and adding unit tests(jest) with the team to increase code quality.
-    Used technologies : Vue.js · JavaScript · AngularJS · TypeScript · RxJS · MySQL · Express.js · Jest · Scss`,
+    Used technologies : Vue.js · JavaScript · Angular · TypeScript · RxJS · MySQL · Express.js · Jest · Scss`,
   },
   {
     date: "Feb 2021 / July 2022",

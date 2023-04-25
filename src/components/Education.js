@@ -14,12 +14,12 @@ export const Education = () => {
               <Icon icon="cil:education" style={{ fontSize: "24px" }} />
             </div>
             <div className="flex flex-col flex-grow pl-4 ">
-              <div className="font-extrabold">{edu.university}</div>
+              <div className="font-extrabold">{edu.school}</div>
               <div className="text-sm tracking-wide font-light text-gray-500 dark:text-white">
                 {edu.department}
                 <small> - {edu.date} </small>
                 {edu.grade && (
-                  <span className="text-xs font-light text-gray-500 dark:text-purp">
+                  <span className="text-xs font-light text-gray-500 dark:text-gray-400 dark:font-medium">
                     - (GPA:{edu.grade}/4)
                   </span>
                 )}

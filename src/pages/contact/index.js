@@ -6,7 +6,7 @@ export default function Index() {
     <>
       <Navbar />
       <div className="py-16  mx-auto max-w-screen-sm animate-fade-in-short">
-        <h2 className="my-4 capitalize text-2xl tracking-tight font-bold text-center md:text-left">
+        <h2 className="my-4 capitalize text-lg md:text-xl tracking-tight font-bold text-center">
           Contact
         </h2>
         <div className="mb-5 font-light text-center text-gray-500 dark:text-gray-400 text-sm md:text-base flex flex-col md:flex-row gap-2 items-center justify-between">

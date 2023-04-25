@@ -20,12 +20,12 @@ export const WorkExperience = () => {
             <div className="flex-grow pl-4 flex flex-col gap-1">
               <div className="font-extrabold flex items-center">
                 {exp.company}
-                <span className="text-sm ml-1  capitalize tracking-wide font-medium text-crio dark:text-purp">
+                <span className="text-sm ml-1  capitalize tracking-wide font-medium text-crio dark:text-gray-400">
                   - {exp.title}
                 </span>
               </div>
 
-              <div className="font-light text-gray-500">
+              <div className="font-light text-gray-500 dark:text-gray-300">
                 <small>
                   {exp.date} - <small>{exp.total}</small>
                 </small>

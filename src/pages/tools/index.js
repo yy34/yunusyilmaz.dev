@@ -12,13 +12,13 @@ export default function index() {
       <Navbar />
       <div className="animate-fade-in-short">
         <div className="mx-auto max-w-screen-lg py-6">
-          <h2 className="my-4 capitalize text-2xl tracking-tight font-bold text-center md:text-left">
+          <h2 className="my-4 capitalize text-lg md:text-xl tracking-tight font-bold text-center">
             Used technologies
           </h2>
           <Tools data={Frontend} title="Front-End" />
           <Tools data={Backend} title="Back-End" />
           <Tools data={Others} title="Other Tools" />
-          <Tools data={WantToLearn} title="I will learn" />
+          <Tools data={WantToLearn} title="Development Goals" />
         </div>
       </div>
     </>
