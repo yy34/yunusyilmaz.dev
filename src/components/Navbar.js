@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 export const Navbar = () => {
   const router = useRouter();
-  console.log("router.pathname", router.pathname);
   return (
     <header className="animate-fade-in-short">
       <nav className="mt-2">

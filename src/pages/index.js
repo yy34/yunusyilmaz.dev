@@ -3,7 +3,7 @@ import { JobInfo } from "../components/JobInfo";
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <div className="animate-fade-in">
         <Navbar />
       </div>
