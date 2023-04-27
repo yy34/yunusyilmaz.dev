@@ -1,7 +1,8 @@
-import "../styles/globals.css";
-import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import { LayoutWrapper } from "../components/Layout";
+import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "next-themes";
+import "../styles/globals.css";
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <LayoutWrapper>
         <Component {...pageProps} />
+        <Analytics />
       </LayoutWrapper>
     </ThemeProvider>
   );
