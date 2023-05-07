@@ -14,16 +14,16 @@ export default function Index() {
               <Image
                 src={mypic}
                 alt="Yunus Yilmaz"
-                className="h-32 w-32 object-cover rounded-full flex-shrink-0"
+                className="h-40 w-40 object-cover rounded-full flex-shrink-0"
               />
               <div className="hidden">
                 <div className="font-extrabold">Yunus YILMAZ</div>
-                <div className="text-sm font-light text-center text-gray-500">
+                <div className="text-sm font-light text-center text-slate-500">
                   1996 - Istanbul
                 </div>
               </div>
             </div>
-            <blockquote className="italic font-thin text-base leading-relaxed my-3">
+            <blockquote className="italic text-base leading-relaxed my-3">
               <svg
                 aria-hidden="true"
                 className="w-8 h-8 text-slate-400"
@@ -36,24 +36,30 @@ export default function Index() {
                   fill="currentColor"
                 />
               </svg>
-              <div className="font-light text-center text-gray-500">
-                I am a engineer who is passionate about his job,{" "}
-                <strong className="font-extrabold dark:text-zinc-300">
-                  follows new technologies
-                </strong>
-                ,{" "}
-                <strong className="font-extrabold dark:text-zinc-300">
-                  follows the software industry closely
-                </strong>
-                ,{" "}
-                <strong className="font-extrabold dark:text-zinc-300">
-                  increases the motivation of my colleagues
+              <div className="font-light text-center text-slate-500">
+                I’m a full stack software engineer working at{" "}
+                <strong className="font-bold dark:text-zinc-300 bg-hwred dark:bg-purp dark:opacity-100 text-white mx-0.5 py-0.5 px-1 opacity-80">
+                  Huawei.
                 </strong>{" "}
-                and enjoys conveying what I know to them.<br></br>I am a person
-                who cares about design and minimalism, tries to make designs
-                that are pleasing to the eyes of people, uses the latest
-                Javascript features and libraries, and also experiences backend
-                technologies.
+                I love my job,{" "}
+                <strong className="font-bold dark:text-zinc-300">
+                  follow new technologies
+                </strong>{" "}
+                and software industry closely. I care a lot about design and{" "}
+                <strong className="font-bold dark:text-zinc-300">
+                  minimalism,
+                </strong>{" "}
+                I try to produce designs that appeal to people's eyes, and I
+                don’t hesitate to{" "}
+                <strong className="font-bold dark:text-zinc-300">
+                  share my knowledge
+                </strong>{" "}
+                with my teammates and try to increase their motivation. I also
+                pay attention to communication within the team, try to take a{" "}
+                <strong className="font-bold dark:text-zinc-300">
+                  proactive role
+                </strong>{" "}
+                in every project and focus on continuous self-improvement.
               </div>
             </blockquote>
           </div>
