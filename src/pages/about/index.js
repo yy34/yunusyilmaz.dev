@@ -37,23 +37,17 @@ export default function Index() {
                 />
               </svg>
               <div className="font-light text-center text-gray-500">
-                I am a engineer who is passionate about his job,{" "}
+                I’m a full stack software engineer working at{" "}
                 <strong className="font-extrabold dark:text-zinc-300">
-                  follows new technologies
-                </strong>
-                ,{" "}
-                <strong className="font-extrabold dark:text-zinc-300">
-                  follows the software industry closely
-                </strong>
-                ,{" "}
-                <strong className="font-extrabold dark:text-zinc-300">
-                  increases the motivation of my colleagues
+                  Huawei.
                 </strong>{" "}
-                and enjoys conveying what I know to them.<br></br>I am a person
-                who cares about design and minimalism, tries to make designs
-                that are pleasing to the eyes of people, uses the latest
-                Javascript features and libraries, and also experiences backend
-                technologies.
+                I love my job, follow new technologies and software industry
+                closely. I care a lot about design and minimalism, I try to
+                produce designs that appeal to people's eyes, and I don’t
+                hesitate to share my knowledge with my teammates and try to
+                increase their motivation. I also pay attention to communication
+                within the team, try to take a proactive role in every project
+                and focus on continuous self-improvement.
               </div>
             </blockquote>
           </div>
