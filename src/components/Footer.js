@@ -6,7 +6,7 @@ import { GITHUB } from "../data/Links";
 export const Footer = () => {
   return (
     <footer className="shadow-lg">
-      <hr className="border-gray-200 dark:border-clare" />
+      <hr className="border-gray-200 dark:border-crio" />
       <div className="max-w-screen-lg mx-auto py-3">
         <div className="flex flex-col md:flex-row justify-between items-center md:px-4">
           <div className="flex justify-center items-center">

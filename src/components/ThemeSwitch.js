@@ -11,7 +11,7 @@ export const ThemeSwitch = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="ml-1 mr-1 h-8 w-8 p-1 sm:ml-4 fixed right-4 bottom-4 md:right-[5rem] md:bottom-[5rem] bg-crio hover:bg-clare rounded-full "
+      className="ml-1 mr-1 h-8 w-8 p-1 sm:ml-4 fixed right-4 bottom-4 md:right-[5rem] md:bottom-[5rem] bg-crio hover:bg-hw rounded-full "
       onClick={() =>
         setTheme(
           theme === "dark" || resolvedTheme === "dark" ? "light" : "dark"

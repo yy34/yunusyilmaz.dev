@@ -9,7 +9,7 @@ export const JobInfo = () => {
         I'm Yunus YILMAZ<br></br> I'm a Software Engineer at
         <span className="relative ml-3">
           <span
-            className="block absolute -inset-1 -skew-y-3 bg-hwred opacity-80 dark:opacity-100 dark:bg-purp"
+            className="block absolute -inset-1 -skew-y-3 bg-hw"
             aria-hidden="true"
           ></span>
           <span className="relative text-white font-thin text-xs uppercase tracking-widest">

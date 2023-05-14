@@ -16,6 +16,7 @@ module.exports = {
         purp: "#9E4784",
         crio: "#212f45",
         clare: "#3e1f47",
+        hw: "#e55164",
       },
 
       fontFamily: {

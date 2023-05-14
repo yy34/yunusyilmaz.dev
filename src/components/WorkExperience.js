@@ -1,4 +1,4 @@
-import { WorkExperiences } from "../data/Datas";
+import { WorkExperiences } from "../data/ExperienceData";
 import { Icon } from "@iconify/react";
 
 export const WorkExperience = () => {
@@ -18,7 +18,7 @@ export const WorkExperience = () => {
             </div>
 
             <div className="flex-grow pl-4 flex flex-col gap-1">
-              <div className="font-extrabold flex items-center">
+              <div className="font-extrabold flex items-center ">
                 {exp.company}
                 <span className="text-sm ml-1  capitalize tracking-wide font-medium text-crio dark:text-gray-400">
                   - {exp.title}

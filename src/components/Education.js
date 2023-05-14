@@ -1,4 +1,4 @@
-import { Educations } from "../data/Datas";
+import { Educations } from "../data/ExperienceData";
 import { Icon } from "@iconify/react";
 
 export const Education = () => {

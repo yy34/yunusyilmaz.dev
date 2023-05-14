@@ -38,7 +38,7 @@ export default function Index() {
               </svg>
               <div className="font-light text-center text-slate-500">
                 I’m a full stack software engineer working at{" "}
-                <strong className="font-bold dark:text-zinc-300 bg-hwred dark:bg-purp dark:opacity-100 text-white mx-0.5 py-0.5 px-1 opacity-80">
+                <strong className="font-bold  bg-hw text-white mx-0.5 py-0.5 px-1">
                   Huawei.
                 </strong>{" "}
                 I love my job,{" "}

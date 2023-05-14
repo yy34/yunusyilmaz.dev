@@ -20,7 +20,7 @@ export const Navbar = () => {
             >
               <span
                 className={`cursor-pointer ${
-                  router.pathname === nav.href ? "text-purp" : ""
+                  router.pathname === nav.href ? "text-hw" : ""
                 }`}
               >
                 {nav.name}
