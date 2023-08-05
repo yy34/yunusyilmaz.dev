@@ -4,7 +4,7 @@ export const Tools = ({ data, title }) => {
     <div className="flex flex-col">
       <div className="relative inline-block my-12 font-sarala w-fit">
         <div
-          className="block absolute -inset-2 -skew-y-3 bg-hw dark:bg-crio"
+          className="block absolute -inset-2 -skew-y-3 bg-crio"
           aria-hidden="true"
         ></div>
         <div className="relative text-white text-sm md:text-base font-medium uppercase tracking-widest">

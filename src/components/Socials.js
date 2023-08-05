@@ -12,7 +12,7 @@ export const Socials = () => {
               title={social.label}
               href={social.href}
               target="_blank"
-              className="bg-dark px-3 py-2 font-medium hover:bg-clare hover:text-white relative flex flex-col items-center "
+              className="duration-300 bg-dark px-3 py-2 font-medium hover:bg-crio hover:text-white relative flex flex-col items-center "
             >
               <Icon icon={social.icon} style={{ fontSize: "24px" }} />
             </Link>

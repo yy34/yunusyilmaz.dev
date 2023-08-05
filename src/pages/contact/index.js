@@ -60,7 +60,7 @@ export default function Index() {
           </div>
           <button
             type="submit"
-            className="py-2 px-5 text-sm md:text-base font-medium text-center text-white rounded-lg bg-crio sm:w-fit hover:bg-clare focus:ring-4 focus:outline-none"
+            className="py-2 px-5 text-sm md:text-base font-medium text-center text-white rounded-lg bg-crio sm:w-fit hover:bg-hw focus:ring-4 focus:outline-none"
           >
             Send message
           </button>

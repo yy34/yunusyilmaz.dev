@@ -16,12 +16,24 @@ export const Frontend = [
     icon: "vscode-icons:file-type-angular",
   },
   {
+    name: "NgRx",
+    icon: "devicon:ngrx",
+  },
+  {
+    name: "RxJS",
+    icon: "skill-icons:reactivex-light",
+  },
+  {
     name: "React",
     icon: "vscode-icons:file-type-reactjs",
   },
   {
     name: "Redux",
     icon: "skill-icons:redux",
+  },
+  {
+    name: "React Native",
+    icon: "skill-icons:react-dark",
   },
   {
     name: "Next.js",
@@ -35,10 +47,7 @@ export const Frontend = [
     name: "jQuery",
     icon: "skill-icons:jquery",
   },
-  {
-    name: "HTML",
-    icon: "logos:html-5",
-  },
+
   {
     name: "Scss",
     icon: "vscode-icons:file-type-scss",
@@ -76,6 +85,14 @@ export const Backend = [
   {
     name: "MongoDB",
     icon: "vscode-icons:file-type-mongo",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "skill-icons:postgresql-light",
+  },
+  {
+    name: "GraphQL",
+    icon: "skill-icons:graphql-light",
   },
 ];
 export const Others = [
@@ -130,6 +147,10 @@ export const Others = [
   {
     name: "Postman",
     icon: "logos:postman-icon",
+  },
+  {
+    name: "Docker",
+    icon: "skill-icons:docker",
   },
   {
     name: "Swagger",
