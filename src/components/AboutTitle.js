@@ -2,7 +2,7 @@ import React from "react";
 
 export const AboutTitle = ({ title }) => {
   return (
-    <div className="relative inline-block font-sarala w-fit my-10">
+    <div className="relative inline-block w-fit my-10">
       <div
         className="block absolute -inset-2 -skew-y-3 bg-crio"
         aria-hidden="true"

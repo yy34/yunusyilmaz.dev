@@ -7,12 +7,12 @@ export const Experience = () => {
       <div className="max-w-screen-lg mx-auto">
         <div className="flex flex-col">
           <>
-            <AboutTitle title="Education" />
-            <Education />
-          </>
-          <>
             <AboutTitle title="Experience" />
             <WorkExperience />
+          </>
+          <>
+            <AboutTitle title="Education" />
+            <Education />
           </>
         </div>
       </div>

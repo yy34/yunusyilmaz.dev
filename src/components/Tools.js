@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 export const Tools = ({ data, title }) => {
   return (
     <div className="flex flex-col">
-      <div className="relative inline-block my-12 font-sarala w-fit">
+      <div className="relative inline-block my-12 w-fit">
         <div
           className="block absolute -inset-2 -skew-y-3 bg-crio"
           aria-hidden="true"
@@ -11,7 +11,7 @@ export const Tools = ({ data, title }) => {
           {title}
         </div>
       </div>
-      <div className="font-sarala grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
         {data &&
           data.map((tech, key) => (
             <div

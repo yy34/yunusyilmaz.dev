@@ -4,7 +4,7 @@ import { socialData } from "../data/Links";
 
 export const Socials = () => {
   return (
-    <div className="flex justify-center md:justify-evenly gap-3">
+    <div className={`flex justify-center md:justify-evenly gap-3`}>
       {socialData &&
         socialData.map((social, key) => (
           <div key={key}>

@@ -16,7 +16,7 @@ export const Navbar = () => {
                 router.pathname === "/"
                   ? "md:text-base capitalize"
                   : "md:text-lg uppercase"
-              }   font-medium duration-300 text-base rounded-lg px-3 py-2 hover:bg-slate-100 font-sarala  hover:text-black`}
+              }   font-medium duration-300 text-base rounded-lg px-3 py-2 hover:bg-slate-100  hover:text-black`}
             >
               <span
                 className={`cursor-pointer ${

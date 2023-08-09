@@ -15,11 +15,6 @@ export const socialData = [
     label: "Email",
     icon: "ph:envelope-simple-light",
   },
-  {
-    href: "https://twitter.com/yy34__",
-    label: "Twitter",
-    icon: "ph:twitter-logo",
-  },
 ];
 
 export const URL = {
