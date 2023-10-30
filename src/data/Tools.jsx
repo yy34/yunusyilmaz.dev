@@ -91,8 +91,8 @@ export const Backend = [
     icon: "skill-icons:postgresql-light",
   },
   {
-    name: "GraphQL",
-    icon: "skill-icons:graphql-light",
+    name: "Firebase",
+    icon: "vscode-icons:file-type-firebase",
   },
 ];
 export const Others = [
@@ -116,9 +116,10 @@ export const Others = [
     name: "GitLab",
     icon: "vscode-icons:file-type-gitlab",
   },
+
   {
-    name: "Firebase",
-    icon: "vscode-icons:file-type-firebase",
+    name: "GraphQL",
+    icon: "skill-icons:graphql-light",
   },
   {
     name: "Figma",

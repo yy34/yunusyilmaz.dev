@@ -14,11 +14,20 @@ export const Educations = [
 
 export const WorkExperiences = [
   {
-    date: "July 2022 / ",
-    total: "present",
+    date: "Nov 2023 - Present",
+    working_order: "Hybrid",
+    company: "sahibinden",
+    title: "Software Engineer",
+    logo: "/sahibinden.svg",
+    desc: ``,
+  },
+  {
+    date: "Jul 2022 - Oct 2023",
+    total: "1 yr 4 mos",
     working_order: "Hybrid",
     company: "Huawei",
     title: "Software Engineer",
+    logo: "/huawei.svg",
     desc: `Worked on projects using Vuetify, Vue.js and built-in database tools via AppCube which is a Huawei low-code application.
     Transforming app designs into front-end code with Vue.js and Angular.
     Working with backend developers to integrate UI components with APIs and databases.
@@ -27,22 +36,24 @@ export const WorkExperiences = [
     Used technologies : Vue.js · JavaScript · Angular · TypeScript · RxJS · MySQL · Express.js · Jest · Scss`,
   },
   {
-    date: "Feb 2021 / July 2022",
+    date: "Feb 2021 - Jul 2022",
     total: "1 yr 5 mos",
     working_order: "On-site",
     company: "T-Soft",
-    title: "Front-End Developer",
+    title: "Software Engineer",
+    logo: "/tsoft.svg",
     desc: `Coding the frontend of 30+ e-commerce sites using Vue.js, JavaScript, Scss.
       Fixing bugs from customer and testing team.
       Developing and revising coding-related requests from customers.
         `,
   },
   {
-    date: "Sep 2014 / June 2015",
+    date: "Sep 2014 - June 2015",
     total: "10 mos",
     working_order: "On-site",
     company: "IBM",
-    title: "IT Intern",
+    title: "Intern",
+    logo: "/ibm.svg",
     desc: `Supporting the IT team in the maintenance of hardware, software and other systems.
       Help troubleshoot problems and provide technical support.
       Organizing and maintaining IT resources.

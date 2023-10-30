@@ -1,16 +1,30 @@
-import { Navbar } from "../components/Navbar";
-import { JobInfo } from "../components/JobInfo";
+import Socials from "../components/Socials";
+import Container from "../components/Container";
+import FadeIn from "../components/FadeIn";
+import Button from "../components/Button";
+import Experience from "../components/Experience";
+import Stack from "../components/Stack";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="animate-fade-in">
-        <Navbar />
-      </div>
-      <h2 className="font-extrabold cursor-default animate-title text-6xl my-16">
-        {`</hello>`}
-      </h2>
-      <JobInfo />
-    </div>
+    <main className="text-black">
+      <Container className="mt-24 sm:mt-48">
+        <FadeIn className="max-w-2xl">
+          <Socials />
+          <h1 className="text-3xl before:tracking-tight font-bold text-neutral-950 dark:text-neutral-50">
+            Hello, I'm Yunus.
+          </h1>
+
+          <p className="my-6 font-thin text-xl text-neutral-700 dark:text-neutral-50">
+            I'm a full stack developer based in Istanbul, and I'm very
+            passionate and dedicated to my work. I currently work at sahibinden.
+          </p>
+
+          <Button href="/about"> About Me</Button>
+        </FadeIn>
+      </Container>
+      <Experience />
+      <Stack />
+    </main>
   );
 }

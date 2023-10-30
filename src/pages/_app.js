@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { LayoutWrapper } from "../components/Layout";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "next-themes";
-import "../styles/globals.css";
+import RootLayout from "../components/RootLayout";
+import "./globals.css";
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
@@ -14,10 +14,10 @@ export default function App({ Component, pageProps }) {
         />
         <title>Yunus YILMAZ | Software Engineer </title>
       </Head>
-      <LayoutWrapper>
+      <RootLayout>
         <Component {...pageProps} />
         <Analytics />
-      </LayoutWrapper>
+      </RootLayout>
     </ThemeProvider>
   );
 }

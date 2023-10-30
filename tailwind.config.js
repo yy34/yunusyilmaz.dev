@@ -17,22 +17,35 @@ module.exports = {
         crio: "#212f45",
         clare: "#3e1f47",
         hw: "#e55164",
+        sa: "#ffe802",
+        secondaryLight: "#957fef",
+        primary: "#1565c0",
+        primaryLight: "#42a5f5",
+        borderLight: "#ffffff08",
+        bgBlack: "#121212",
       },
-
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(6rem, 1fr))",
+      },
       fontFamily: {
-        sarala: ["Sarala", ...defaultTheme.fontFamily.sans],
-        sans: ["Ubuntu"],
-        ubuntu: ["Ubuntu"],
+        sans: ["Ovo", ...defaultTheme.fontFamily.sans],
+        mukta: ["Mukta", ...defaultTheme.fontFamily.sans],
+        outfit: ["Outfit", ...defaultTheme.fontFamily.sans],
       },
 
       animation: {
-        "fade-in": "fade-in 3s ease-in-out forwards",
+        "fade-in": "fade-in 1s ease-in-out forwards",
         "fade-in-short": "fade-in .7s ease-in-out forwards",
         title: "title 2s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
+        marquee: "marquee 30s linear infinite",
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
         "fade-in": {
           "0%": {
             opacity: "0%",

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Ovo&display=swap");
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+@layer base {
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  }
+}
+:root {
+  --background: white;
+  --foreground: #15171b;
+  transition: all 0.5s ease;
+  min-height: 100vh;
+  /* background: url(/bg.png) no-repeat;
+  background-size: 100%;
+  background-position: -50vh 10%;
+  background-attachment: fixed; */
+}
+body {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --foreground: white;
+}
+.dark {
+  background-color: #121212;
+}
