@@ -47,7 +47,7 @@ const SectionIntro = ({
             <>
               <span
                 className={clsx(
-                  "my-3 block font-display text-base font-thin  text-neutral-950 dark:text-neutral-50"
+                  "my-3 block font-display text-sm md:text-base font-thin  text-neutral-950 dark:text-neutral-50"
                 )}
               >
                 {eyebrow}
@@ -60,7 +60,7 @@ const SectionIntro = ({
         {children && (
           <div
             className={clsx(
-              "text-lg mb-5 text-center uppercase tracking-widest text-neutral-950 dark:text-neutral-50"
+              "text-base md:text-lg mb-5 text-center uppercase tracking-widest text-neutral-950 dark:text-neutral-50"
             )}
           >
             {children}

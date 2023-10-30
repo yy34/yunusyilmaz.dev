@@ -20,13 +20,13 @@ const Experience = () => {
               <div className="max-w-2xl mx-auto border2 border-borderLight dark:grayscale dark:hover:grayscale-0 rounded-lg py-6 px-3 dark:px-6 dark:bg-bgBlack hover:bg-neutral-100 dark:hover:bg-neutral-700 duration-300 transition-all">
                 <div className="flex gap-4 items-center justify-between">
                   <div>
-                    <span className="text-lg text-gray-500 dark:text-gray-400">
+                    <span className="text-sm md:text-lg text-gray-500 dark:text-gray-400">
                       {work.company}
                     </span>
-                    <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-200">
+                    <h3 className="text-base md:text-xl font-semibold text-gray-600 dark:text-gray-200">
                       {work.title}
                     </h3>
-                    <span className="mb-3 font-light text-base text-gray-500 dark:text-gray-400">
+                    <span className="mb-3 font-light text-sm md:text-base text-gray-500 dark:text-gray-400">
                       {work.date}
                     </span>
                   </div>

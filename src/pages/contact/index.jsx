@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <>
       <PageIntro title="Contact Me">
-        <p className="">
+        <p className="mb-5 text-base md:text-xl">
           You can reach me immediately via LinkedIn or my social media accounts.
         </p>
       </PageIntro>

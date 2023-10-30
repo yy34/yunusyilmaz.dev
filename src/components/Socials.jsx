@@ -12,9 +12,11 @@ const Socials = () => {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="duration-300 hover:-translate-y-1 font-light  relative flex  text-neutral-950 dark:text-neutral-50 items-center "
+            className="duration-300 hover:-translate-y-1 font-light relative flex  text-neutral-950 dark:text-neutral-50 items-center "
           >
-            <span className="text-base uppercase mr-1">{social.label}</span>
+            <span className="text-sm md:text-base uppercase mr-1">
+              {social.label}
+            </span>
             <Icon icon="ph:arrow-up-right-light" style={{ fontSize: "12px" }} />
           </Link>
         </div>
