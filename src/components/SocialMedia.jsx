@@ -20,11 +20,12 @@ const SocialMedia = ({ className, invert = false }) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={item.title}
+            title={item.label}
             className={clsx("transition ")}
           >
             <Icon
               className={clsx(
-                "fill-neutral-700 dark:fill-white duration-300 hover:-translate-y-1"
+                "fill-bgBlack dark:fill-white duration-300 hover:-translate-y-1"
               )}
               icon={item.icon}
               style={{ fontSize: "24" }}

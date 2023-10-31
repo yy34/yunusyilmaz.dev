@@ -28,12 +28,14 @@ export const WorkExperiences = [
     company: "Huawei",
     title: "Software Engineer",
     logo: "/huawei.svg",
-    desc: `Worked on projects using Vuetify, Vue.js and built-in database tools via AppCube which is a Huawei low-code application.
-    Transforming app designs into front-end code with Vue.js and Angular.
-    Working with backend developers to integrate UI components with APIs and databases.
-    Debugging, troubleshooting and performing routine performance optimizations.
-    Making code reviews and adding unit tests(jest) with the team to increase code quality.
-    Used technologies : Vue.js · JavaScript · Angular · TypeScript · RxJS · MySQL · Express.js · Jest · Scss`,
+    desc: [
+      "Full stack project developments using Vue.js, JavaScript and built-in database tools.",
+      "Development of the Enterprise Search Service KooSearch project using built-in Huawei tools, Angular.",
+      "Development of side projects using Java, Spring Boot, Express.js, MySQL to provide development.",
+      "Developing the ROMA Connect project, a next-generation, cloud-based, low-code iPaaS, full-stack application and data integration platform using Angular, RxJS, DevUI and built-in Huawei tools.",
+      "Code reviews and writing unit tests to improve code quality. (Jest)",
+      "Mentoring new team members.",
+    ],
   },
   {
     date: "Feb 2021 - Jul 2022",
@@ -42,10 +44,11 @@ export const WorkExperiences = [
     company: "T-Soft",
     title: "Software Engineer",
     logo: "/tsoft.svg",
-    desc: `Coding the frontend of 30+ e-commerce sites using Vue.js, JavaScript, Scss.
-      Fixing bugs from customer and testing team.
-      Developing and revising coding-related requests from customers.
-        `,
+    desc: [
+      "Coding the frontend of 30+ e-commerce sites using Vue.js, JavaScript, jQuery, Scss.",
+      "Fixing bugs from customer and testing team.",
+      "Developing and revising coding requests from many popular customers.",
+    ],
   },
   {
     date: "Sep 2014 - June 2015",
@@ -54,9 +57,10 @@ export const WorkExperiences = [
     company: "IBM",
     title: "Intern",
     logo: "/ibm.svg",
-    desc: `Supporting the IT team in the maintenance of hardware, software and other systems.
-      Help troubleshoot problems and provide technical support.
-      Organizing and maintaining IT resources.
-        `,
+    desc: [
+      "Supporting the IT team in the maintenance of hardware, software and other systems.",
+      "Help troubleshoot problems and provide technical support.",
+      "Organizing and maintaining IT resources.",
+    ],
   },
 ];

@@ -4,6 +4,7 @@ import FadeIn from "../../components/FadeIn";
 import Button from "../../components/Button";
 import mypic from "../../assets/images/profile.jpg";
 import Image from "next/image";
+import ExperienceDetail from "../../components/ExperienceDetail";
 
 const AboutPage = () => {
   const aboutMe = [
@@ -26,16 +27,21 @@ const AboutPage = () => {
       <div className="text-neutral-600 dark:text-neutral-50">
         {renderAboutParagraphs()}
       </div>
+
+      <ExperienceDetail></ExperienceDetail>
+
       <FadeIn>
         <div className="flex flex-col md:flex-row gap-7 items-center justify-between border-y border-neutral-100 dark:border-neutral-700 py-5 my-10">
           <Image
             src={mypic}
             alt="Yunus Yilmaz"
-            className="h-28 w-28 rounded-full object-cover object-right-top"
+            className="h-36 w-36 object-cover object-right-top"
           />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 justify-center items-center">
+            <div className="uppercase text-sm tracking-widest dark:text-neutral-50">
+              Contact Me{" "}
+            </div>
             <SocialMedia />
-            <Button href="mailto:yunusyilmazz34@gmail.com">send mail</Button>
           </div>
         </div>
       </FadeIn>

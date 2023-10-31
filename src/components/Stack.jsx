@@ -6,9 +6,9 @@ import { Frontend, Backend, Others, WantToLearn } from "../data/Tools";
 
 const Stack = () => {
   return (
-    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
+    <div className="relative mt-12 pt-12 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
       <SectionIntro
-        eyebrow=" The following is my on-the-go app stack for designing, coding, managing & all.."
+        eyebrow="The following is my on-the-go app stack for designing, coding, managing & all.."
         title="Tech Stack"
       ></SectionIntro>
 

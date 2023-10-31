@@ -20,12 +20,9 @@ const ArrowIcon = (props) => {
 const Footer = () => {
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2"></div>
-        <div className="mb-20 mt-24 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Socials></Socials>
-        </div>
-      </FadeIn>
+      <div className="flex justify-center border-t border-neutral-950/10 dark:border-neutral-700 py-5">
+        <Socials></Socials>
+      </div>
     </Container>
   );
 };

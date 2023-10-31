@@ -13,8 +13,8 @@ const SectionIntro = ({
 }) => {
   return (
     <Container {...props}>
-      <FadeIn className="">
-        <div className="relative h-24 w-24  items-center justify-center mx-auto">
+      <FadeIn>
+        <div className="relative h-12 w-12 md:h-24 md:w-24 items-center justify-center mx-auto">
           <div className="absolute inset-0 flex flex-wrap blur-3xl">
             <div
               aria-hidden="true"
@@ -38,7 +38,7 @@ const SectionIntro = ({
           <span
             className={clsx(
               "block tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950 dark:text-neutral-50",
-              smaller ? "sm:text-lg  px-0" : "sm:text-5xl"
+              smaller ? "sm:text-lg px-0" : "sm:text-5xl"
             )}
           >
             {title}

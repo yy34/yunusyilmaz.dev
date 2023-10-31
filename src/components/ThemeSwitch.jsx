@@ -14,11 +14,11 @@ const ThemeSwitch = () => {
           theme === "dark" || resolvedTheme === "dark" ? "light" : "dark"
         )
       }
-      className="switcher group relative h-7 w-7 ml-5 rounded-full before:absolute before:inset-0 before:rounded-full  before:bg-transparent before:bg-gradient-to-b before:transition-transform before:duration-500 hover:before:scale-105 active:duration-75 active:before:scale-95  dark:before:bg-gray-800 lg:flex"
+      className="switcher group relative h-7 w-7 ml-5 rounded-full before:absolute before:inset-0 before:rounded-full before:bg-transparent before:bg-gradient-to-b md:before:transition-transform md:before:duration-500 md:hover:before:scale-105 md:active:duration-75 md:active:before:scale-95  dark:before:bg-gray-800 lg:flex"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="transistion relative m-auto hidden h-5 w-5 fill-neutral-950  duration-300 group-hover:rotate-180 group-hover:fill-sa dark:block dark:fill-gray-300"
+        className="transition relative m-auto hidden h-5 w-5 fill-neutral-950 duration-300 md:group-hover:rotate-180 group-hover:fill-sa dark:block dark:fill-gray-300"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -30,7 +30,7 @@ const ThemeSwitch = () => {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="transistion relative m-auto h-5 w-5 fill-neutral-950 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+        className="transition relative m-auto h-5 w-5 fill-neutral-950 duration-300 md:group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
