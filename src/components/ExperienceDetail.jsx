@@ -49,7 +49,7 @@ const ExperienceDetail = () => {
               </div>
 
               {work.desc && (
-                <div className="mt-3 md:pr-20">
+                <div className="mt-3 pr-20">
                   {Array.isArray(work.desc) ? (
                     work.desc.map((dsc, idx) => (
                       <p

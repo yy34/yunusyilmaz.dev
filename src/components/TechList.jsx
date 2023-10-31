@@ -4,15 +4,23 @@ import FadeIn, { FadeInStagger } from "./FadeIn";
 const TechList = ({ techStack }) => {
   return (
     <FadeIn>
-      <div className="max-w-md mx-auto">
-        <div className="grid grid-cols-fluid gap-3">
+      <div className="max-w-md mx-auto my-10">
+        <div className="grid grid-cols-fluid gap-y-12">
           {techStack.map((tech, key) => (
             <div
               key={key}
-              className="flex flex-col gap-2 items-center justify-center text-center bg-neutral-50 hover:bg-neutral-100 dark:bg-bgBlack rounded-lg py-3 px-1 font-light"
+              className="group flex justify-center items-center relative"
             >
-              <Icon icon={tech.icon} style={{ fontSize: "30px" }} />
-              <span className="font-normal text-neutral-950 dark:text-neutral-50 text-sm">
+              <Icon
+                className="w-12 h-12 object-cover cursor-pointer rounded-md"
+                icon={tech.icon}
+                style={{ fontSize: "48px" }}
+              />
+
+              <span
+                className="group-hover:opacity-100 transition-all duration-500 whitespace-nowrap bg-neutral-600 text-xs md:text-sm text-center text-gray-100 rounded-md absolute left-1/2 
+-translate-x-1/2 translate-y-10  md:translate-y-12 opacity-0 m-4 mx-auto px-3 py-1 z-10"
+              >
                 {tech.name}
               </span>
             </div>

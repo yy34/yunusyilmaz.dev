@@ -25,7 +25,7 @@ module.exports = {
         bgBlack: "#121212",
       },
       gridTemplateColumns: {
-        fluid: "repeat(auto-fit, minmax(6rem, 1fr))",
+        fluid: "repeat(auto-fit, minmax(5rem, 1fr))",
       },
       fontFamily: {
         sans: ["Ovo", ...defaultTheme.fontFamily.sans],
