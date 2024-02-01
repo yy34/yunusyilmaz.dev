@@ -15,16 +15,16 @@ export const socialData = [
     label: "Email",
     icon: "bxl:gmail",
   },
-  {
-    href: "https://twitter.com/yilmazyuns",
-    label: "Twitter",
-    icon: "bxl:twitter",
-  },
-  {
-    href: "https://instagram.com/yilmazyuns",
-    label: "Instagram",
-    icon: "bxl:instagram-alt",
-  },
+  // {
+  //   href: "https://twitter.com/yilmazyuns",
+  //   label: "Twitter",
+  //   icon: "bxl:twitter",
+  // },
+  // {
+  //   href: "https://instagram.com/yilmazyuns",
+  //   label: "Instagram",
+  //   icon: "bxl:instagram-alt",
+  // },
 ];
 
 export const URL = {
