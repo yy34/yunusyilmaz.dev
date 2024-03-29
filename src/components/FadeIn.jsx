@@ -11,11 +11,11 @@ const FadeIn = (props) => {
   const isInStaggerGroup = useContext(FadeInStaggerContext);
   return (
     <motion.div
-      variants={{
-        hidden: { opacity: 1, y: shouldReduceMotion ? 0 : 24 },
-        visible: { opacity: 1, y: 10 },
-      }}
-      transition={{ duration: 0.2 }}
+      // variants={{
+      //   hidden: { opacity: 1, y: shouldReduceMotion ? 0 : 24 },
+      //   visible: { opacity: 1, y: 10 },
+      // }}
+      // transition={{ duration: 0.2 }}
       {...(isInStaggerGroup
         ? {}
         : {
