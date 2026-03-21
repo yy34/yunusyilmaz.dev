@@ -14,12 +14,12 @@ const SocialMedia = ({ className, invert = false }) => {
       )}
     >
       {socialData.map((item) => (
-        <li key={item.title}>
+        <li key={item.href}>
           <Link
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={item.title}
+            aria-label={item.label}
             title={item.label}
             className={clsx("transition ")}
           >
