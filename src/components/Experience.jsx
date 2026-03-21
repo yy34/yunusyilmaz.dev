@@ -51,7 +51,7 @@ const Experience = () => {
           ))}
         </GridList>
 
-        <div className="flex justify-center">
+        <div className="mt-10 flex justify-center">
           <Button href="about">See Full Experience</Button>
         </div>
       </Container>

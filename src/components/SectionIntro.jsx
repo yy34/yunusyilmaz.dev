@@ -48,7 +48,7 @@ const SectionIntro = ({
           <span
             className={clsx(
               "block text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] dark:text-neutral-50 sm:text-4xl",
-              eyebrow && "mt-4"
+              eyebrow && "mt-10"
             )}
           >
             {heading}
