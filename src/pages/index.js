@@ -10,7 +10,6 @@ export default function Home() {
     <main className="text-black">
       <Container className="mt-24 sm:mt-48">
         <FadeIn className="max-w-2xl">
-          <Socials />
           <h1 className="text-2xl md:text-3xl before:tracking-tight font-bold text-neutral-950 dark:text-neutral-50">
             Hello, I'm Yunus.
           </h1>
@@ -20,7 +19,8 @@ export default function Home() {
             passionate and dedicated to my work. I currently work at sahibinden.
           </p>
 
-          <Button href="/about"> About Me</Button>
+          <Button href="/about">View Background</Button>
+          <Socials />
         </FadeIn>
       </Container>
       <Experience />

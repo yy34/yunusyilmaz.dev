@@ -52,7 +52,9 @@ const Header = ({
               onClick={onToggle}
               aria-expanded={expanded.toString()}
               aria-controls={panelId}
-              className={clsx("group -m-2.5 rounded-full p-2.5 transition")}
+              className={clsx(
+                "group -m-2.5 rounded-full p-2.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-neutral-50 dark:focus-visible:ring-offset-neutral-950"
+              )}
               aria-label="Toggle navigation"
             >
               <Icon
@@ -82,7 +84,7 @@ const NavigationItem = ({ href, children }) => {
   return (
     <Link
       href={href}
-      className="group relative isolate text-center hover:opacity-70 bg-bgBlack px-6 py-10 "
+      className="group relative isolate rounded-2xl bg-bgBlack px-6 py-8 text-center text-3xl hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-bgBlack sm:py-10 sm:text-4xl"
     >
       {children}
     </Link>

@@ -7,20 +7,32 @@ const ThemeSwitch = () => {
   const { theme, setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return <span aria-hidden="true" className="ml-5 block h-11 w-11 shrink-0" />;
+  }
+
   return (
     <button
+      type="button"
       onClick={() =>
         setTheme(
           theme === "dark" || resolvedTheme === "dark" ? "light" : "dark"
         )
       }
-      className="switcher group relative h-7 w-7 ml-5 rounded-full before:absolute before:inset-0 before:rounded-full before:bg-transparent before:bg-gradient-to-b md:before:transition-transform md:before:duration-500 md:hover:before:scale-105 md:active:duration-75 md:active:before:scale-95  dark:before:bg-gray-800 lg:flex"
+      aria-label={
+        theme === "dark" || resolvedTheme === "dark"
+          ? "Switch to light theme"
+          : "Switch to dark theme"
+      }
+      className="switcher group relative ml-5 flex h-11 w-11 items-center justify-center rounded-full before:absolute before:inset-0 before:rounded-full before:bg-transparent before:bg-gradient-to-b focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:before:transition-transform md:before:duration-500 md:hover:before:scale-105 md:active:duration-75 md:active:before:scale-95 dark:before:bg-gray-800 dark:focus-visible:ring-neutral-50 dark:focus-visible:ring-offset-neutral-950"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="transition relative m-auto hidden h-5 w-5 fill-neutral-950 duration-300 md:group-hover:rotate-180 group-hover:fill-sa dark:block dark:fill-gray-300"
         viewBox="0 0 20 20"
         fill="currentColor"
+        aria-hidden="true"
       >
         <path
           fillRule="evenodd"
@@ -33,6 +45,7 @@ const ThemeSwitch = () => {
         className="transition relative m-auto h-5 w-5 fill-neutral-950 duration-300 md:group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
         viewBox="0 0 20 20"
         fill="currentColor"
+        aria-hidden="true"
       >
         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
       </svg>

@@ -1,7 +1,7 @@
+import Container from "../../components/Container";
 import SocialMedia from "../../components/SocialMedia";
 import PageIntro from "../../components/PageIntro";
 import FadeIn from "../../components/FadeIn";
-import Button from "../../components/Button";
 import mypic from "../../assets/images/profile.jpg";
 import Image from "next/image";
 import ExperienceDetail from "../../components/ExperienceDetail";
@@ -17,35 +17,40 @@ const AboutPage = () => {
   const renderAboutParagraphs = () => {
     return aboutMe.map((about, index) => (
       <FadeIn key={index}>
-        <p className="mb-5 text-base md:text-xl">{about}</p>
+        <p className="mb-5">{about}</p>
       </FadeIn>
     ));
   };
 
   return (
-    <PageIntro title="About Me">
-      <div className="text-neutral-600 dark:text-neutral-50">
-        {renderAboutParagraphs()}
-      </div>
+    <>
+      <PageIntro title="About Me">
+        <div className="text-neutral-600 dark:text-neutral-300">
+          {renderAboutParagraphs()}
+        </div>
+      </PageIntro>
 
       <ExperienceDetail></ExperienceDetail>
 
-      <FadeIn>
-        <div className="flex flex-col md:flex-row gap-7 items-center justify-between border-y border-neutral-100 dark:border-neutral-700 py-5 my-10">
-          <Image
-            src={mypic}
-            alt="Yunus Yilmaz"
-            className="h-36 w-36 object-cover object-right-top"
-          />
-          <div className="flex flex-col gap-5 justify-center items-center">
-            <div className="uppercase text-sm tracking-widest dark:text-neutral-50">
-              Contact Me{" "}
+      <Container className="mt-12 sm:mt-16" innerClassName="max-w-3xl">
+        <FadeIn>
+          <div className="flex flex-col items-center justify-between gap-7 border-y border-neutral-100 py-5 dark:border-neutral-700 md:flex-row">
+            <Image
+              src={mypic}
+              alt="Yunus Yilmaz"
+              className="h-36 w-36 object-cover object-right-top"
+              sizes="144px"
+            />
+            <div className="flex flex-col items-center justify-center gap-5">
+              <div className="text-sm font-medium tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+                Get in touch
+              </div>
+              <SocialMedia />
             </div>
-            <SocialMedia />
           </div>
-        </div>
-      </FadeIn>
-    </PageIntro>
+        </FadeIn>
+      </Container>
+    </>
   );
 };
 

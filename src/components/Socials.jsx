@@ -4,24 +4,26 @@ import { socialData } from "../data/Links";
 
 const Socials = () => {
   return (
-    <div className={`flex gap-4 my-8`}>
-      {socialData?.slice(0, 3).map((social, key) => (
-        <div key={key}>
+    <ul role="list" className="my-8 flex flex-wrap gap-x-5 gap-y-3">
+      {socialData.slice(0, 3).map((social) => (
+        <li key={social.href}>
           <Link
             title={social.label}
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="duration-300 hover:-translate-y-1 font-light relative flex text-neutral-950 dark:text-neutral-50 items-center "
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-1 py-2 text-sm font-medium tracking-tight text-neutral-600 transition-colors hover:text-neutral-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:text-neutral-300 dark:hover:text-neutral-50 dark:focus-visible:ring-neutral-50 dark:focus-visible:ring-offset-neutral-950"
           >
-            <span className="text-sm md:text-base uppercase mr-1">
-              {social.label}
-            </span>
-            <Icon icon="ph:arrow-up-right-light" style={{ fontSize: "12px" }} />
+            <span>{social.label}</span>
+            <Icon
+              icon="ph:arrow-up-right-light"
+              className="h-3.5 w-3.5"
+              aria-hidden="true"
+            />
           </Link>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

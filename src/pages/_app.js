@@ -10,9 +10,10 @@ export default function App({ Component, pageProps }) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta
           name="description"
-          content="Software Engineer who wants to constantly improve himself and keep up to date"
+          content="Personal portfolio of Yunus Yilmaz, a software engineer based in Istanbul."
         />
-        <title>Yunus YILMAZ | Software Engineer </title>
+        <title>Yunus Yilmaz | Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <RootLayout>
         <Component {...pageProps} />

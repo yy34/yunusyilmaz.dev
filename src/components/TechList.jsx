@@ -1,10 +1,12 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import FadeIn, { FadeInStagger } from "./FadeIn";
-const TechList = ({ techStack }) => {
+import FadeIn from "./FadeIn";
+import clsx from "clsx";
+
+const TechList = ({ techStack, className }) => {
   return (
     <FadeIn>
-      <div className="max-w-md mx-auto my-10">
+      <div className={clsx("mx-auto max-w-md", className)}>
         <div className="grid grid-cols-fluid gap-y-12">
           {techStack.map((tech, key) => (
             <div
