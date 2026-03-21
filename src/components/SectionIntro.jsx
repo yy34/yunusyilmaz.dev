@@ -19,7 +19,7 @@ const SectionIntro = ({
     return (
       <FadeIn>
         <div className={clsx("mt-12 first:mt-0", className)}>
-          <HeadingTag className="text-lg font-medium tracking-tight text-neutral-950 dark:text-neutral-50 md:text-xl">
+          <HeadingTag className="text-lg font-medium tracking-tight text-neutral-950 dark:text-neutral-50 md:text-xl text-center">
             {heading}
           </HeadingTag>
         </div>
