@@ -39,6 +39,7 @@ const ExperienceDetail = () => {
                       height={44}
                       src={work.logo}
                       alt={work.company}
+                      sizes="44px"
                     />
                   </div>
                 </div>

@@ -7,6 +7,11 @@ const ThemeSwitch = () => {
   const { theme, setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return <span aria-hidden="true" className="ml-5 block h-11 w-11 shrink-0" />;
+  }
+
   return (
     <button
       type="button"

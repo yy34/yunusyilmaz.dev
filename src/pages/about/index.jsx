@@ -39,6 +39,7 @@ const AboutPage = () => {
               src={mypic}
               alt="Yunus Yilmaz"
               className="h-36 w-36 object-cover object-right-top"
+              sizes="144px"
             />
             <div className="flex flex-col items-center justify-center gap-5">
               <div className="text-sm font-medium tracking-[0.18em] text-neutral-500 dark:text-neutral-400">

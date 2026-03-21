@@ -28,7 +28,7 @@ module.exports = {
         fluid: "repeat(auto-fit, minmax(5rem, 1fr))",
       },
       fontFamily: {
-        sans: ["Ovo", ...defaultTheme.fontFamily.sans],
+        sans: ["Ovo", ...defaultTheme.fontFamily.serif],
         mukta: ["Mukta", ...defaultTheme.fontFamily.sans],
         outfit: ["Outfit", ...defaultTheme.fontFamily.sans],
       },
