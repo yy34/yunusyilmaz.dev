@@ -32,10 +32,6 @@ export const Frontend = [
     icon: "skill-icons:redux",
   },
   {
-    name: "React Native",
-    icon: "skill-icons:react-dark",
-  },
-  {
     name: "Next.js",
     icon: "logos:nextjs-icon",
   },
@@ -56,14 +52,6 @@ export const Frontend = [
     name: "Tailwind CSS",
     icon: "vscode-icons:file-type-tailwind",
   },
-  {
-    name: "Vuetify",
-    icon: "logos:vuetifyjs",
-  },
-  {
-    name: "Bootstrap",
-    icon: "skill-icons:bootstrap",
-  },
 ];
 export const Backend = [
   {
@@ -73,10 +61,6 @@ export const Backend = [
   {
     name: "Express.js",
     icon: "skill-icons:expressjs-dark",
-  },
-  {
-    name: "C#",
-    icon: "vscode-icons:file-type-csharp2",
   },
   {
     name: "MySQL",

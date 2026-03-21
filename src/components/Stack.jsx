@@ -19,8 +19,6 @@ const Stack = () => {
         <TechList techStack={Backend} />
         <SectionIntro smaller>Others</SectionIntro>
         <TechList techStack={Others} />
-        <SectionIntro smaller>Will Learn</SectionIntro>
-        <TechList techStack={WantToLearn} />
       </Container>
     </div>
   );
