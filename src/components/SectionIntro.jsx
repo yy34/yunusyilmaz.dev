@@ -8,62 +8,56 @@ const SectionIntro = ({
   title,
   children,
   smaller = false,
-  invert = false,
+  className,
   ...props
 }) => {
-  return (
-    <Container {...props}>
+  const heading = title ?? children;
+  const description = title ? children : null;
+  const HeadingTag = smaller ? "h3" : "h2";
+
+  if (smaller) {
+    return (
       <FadeIn>
-        <div className="relative h-12 w-12 md:h-24 md:w-24 items-center justify-center mx-auto">
-          <div className="absolute inset-0 flex flex-wrap blur-3xl">
-            <div
-              aria-hidden="true"
-              className="h-1/2 w-1/2 rounded-tl-full bg-primary"
-            ></div>
-            <div
-              aria-hidden="true"
-              className="h-1/2 w-1/2 rounded-tr-full bg-purple-700"
-            ></div>
-            <div
-              aria-hidden="true"
-              className="h-1/2 w-1/2 rounded-bl-full bg-secondary"
-            ></div>
-            <div
-              aria-hidden="true"
-              className="h-1/2 w-1/2 rounded-br-full bg-secondaryLight"
-            ></div>
-          </div>
+        <div className={clsx("mt-12 first:mt-0", className)}>
+          <HeadingTag className="text-lg font-medium tracking-tight text-neutral-950 dark:text-neutral-50 md:text-xl">
+            {heading}
+          </HeadingTag>
         </div>
-        <h2 className="text-center">
-          <span
-            className={clsx(
-              "block tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950 dark:text-neutral-50",
-              smaller ? "sm:text-lg px-0" : "sm:text-5xl"
-            )}
-          >
-            {title}
-          </span>
+      </FadeIn>
+    );
+  }
+
+  return (
+    <Container
+      {...props}
+      className={clsx("text-center", className)}
+      innerClassName="max-w-3xl"
+    >
+      <FadeIn>
+        <HeadingTag>
           {eyebrow && (
             <>
               <span
-                className={clsx(
-                  "my-3 block font-display text-sm md:text-base font-thin  text-neutral-950 dark:text-neutral-50"
-                )}
+                className="block text-sm font-medium tracking-[0.18em] text-neutral-500 dark:text-neutral-400"
               >
                 {eyebrow}
               </span>
               <span className="sr-only"> - </span>
             </>
           )}
-        </h2>
-
-        {children && (
-          <div
+          <span
             className={clsx(
-              "text-base md:text-lg mb-5 text-center uppercase tracking-widest text-neutral-950 dark:text-neutral-50"
+              "block text-3xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] dark:text-neutral-50 sm:text-4xl",
+              eyebrow && "mt-4"
             )}
           >
-            {children}
+            {heading}
+          </span>
+        </HeadingTag>
+
+        {description && (
+          <div className="mt-6 max-w-2xl text-base leading-7 text-neutral-600 dark:text-neutral-300 md:mx-auto md:text-lg md:leading-8">
+            {description}
           </div>
         )}
       </FadeIn>

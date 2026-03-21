@@ -4,7 +4,7 @@ import clsx from "clsx";
 const Button = ({ href, className, children, ...props }) => {
   className = clsx(
     className,
-    "capitalize inline-flex justify-center rounded-full px-4 py-1.5 text-sm md:text-base font-semibold transition bg-bgBlack text-white hover:bg-neutral-800 dark:bg-neutral-50 dark:text-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-white"
+    "inline-flex items-center justify-center rounded-full bg-neutral-950 px-4 py-2 text-sm font-medium tracking-tight text-white transition-colors hover:bg-neutral-800 dark:bg-neutral-50 dark:text-neutral-950 dark:hover:bg-neutral-200"
   );
 
   let inner = <span>{children}</span>;

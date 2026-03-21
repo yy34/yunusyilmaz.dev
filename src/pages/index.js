@@ -20,7 +20,7 @@ export default function Home() {
             passionate and dedicated to my work. I currently work at sahibinden.
           </p>
 
-          <Button href="/about"> About Me</Button>
+          <Button href="/about">About Me</Button>
         </FadeIn>
       </Container>
       <Experience />

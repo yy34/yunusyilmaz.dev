@@ -1,7 +1,6 @@
 import SocialMedia from "../../components/SocialMedia";
 import PageIntro from "../../components/PageIntro";
 import FadeIn from "../../components/FadeIn";
-import Button from "../../components/Button";
 import mypic from "../../assets/images/profile.jpg";
 import Image from "next/image";
 import ExperienceDetail from "../../components/ExperienceDetail";
@@ -17,14 +16,14 @@ const AboutPage = () => {
   const renderAboutParagraphs = () => {
     return aboutMe.map((about, index) => (
       <FadeIn key={index}>
-        <p className="mb-5 text-base md:text-xl">{about}</p>
+        <p className="mb-5">{about}</p>
       </FadeIn>
     ));
   };
 
   return (
     <PageIntro title="About Me">
-      <div className="text-neutral-600 dark:text-neutral-50">
+      <div className="text-neutral-600 dark:text-neutral-300">
         {renderAboutParagraphs()}
       </div>
 
@@ -38,8 +37,8 @@ const AboutPage = () => {
             className="h-36 w-36 object-cover object-right-top"
           />
           <div className="flex flex-col gap-5 justify-center items-center">
-            <div className="uppercase text-sm tracking-widest dark:text-neutral-50">
-              Contact Me{" "}
+            <div className="text-sm font-medium tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+              Contact Me
             </div>
             <SocialMedia />
           </div>
