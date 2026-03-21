@@ -4,7 +4,10 @@ import clsx from "clsx";
 export function GridList({ className, children }) {
   return (
     <FadeInStagger>
-      <ul role="list" className={clsx("grid grid-cols-1 gap-3", className)}>
+      <ul
+        role="list"
+        className={clsx("grid grid-cols-1 gap-4 sm:gap-5", className)}
+      >
         {children}
       </ul>
     </FadeInStagger>

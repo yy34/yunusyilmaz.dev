@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "./Container";
 import Image from "next/image";
 import SectionIntro from "./SectionIntro";
 import { GridList, GridListItem } from "./GridList";
@@ -7,69 +8,55 @@ import { WorkExperiences } from "../data/ExperienceData";
 const ExperienceDetail = () => {
   return (
     <div>
-      <SectionIntro className="mt-10 mb-20" title="Work Experience" />
+      <SectionIntro className="mt-12" title="Work Experience" />
 
-      <GridList>
-        {WorkExperiences.map((work, index) => (
-          <GridListItem
-            className="mb-5"
-            key={index}
-            title={work.total !== undefined ? work.total : "Present"}
-          >
-            <div className="duration-300 transition-all">
-              <div className="flex gap-4 items-center justify-between">
-                <div>
-                  <span className="text-base md:text-lg text-gray-500 dark:text-gray-200">
-                    {work.company}
-                  </span>
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-600 dark:text-gray-100">
-                    {work.title}
-                  </h3>
-                  <span className="font-light text-sm md:text-base text-gray-500 dark:text-gray-300 flex items-center gap-2">
-                    {work.date}
-                    {work.total && (
-                      <div className="flex items-center justify-between gap-3">
-                        <span>-</span>
-                        <small className="text-xs text-neutral-400">
+      <Container className="mt-10 sm:mt-14" innerClassName="max-w-3xl">
+        <GridList>
+          {WorkExperiences.map((work, index) => (
+            <GridListItem key={index} title={work.total !== undefined ? work.total : "Present"}>
+              <div className="mx-auto max-w-2xl rounded-2xl border border-neutral-200 bg-white px-5 py-5 dark:border-neutral-800 dark:bg-neutral-950/60 md:px-6 md:py-6">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <span className="text-sm text-neutral-500 dark:text-neutral-400 md:text-base">
+                      {work.company}
+                    </span>
+                    <h3 className="mt-1 text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 md:text-xl">
+                      {work.title}
+                    </h3>
+                    <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-neutral-500 dark:text-neutral-400 md:text-base">
+                      <span>{work.date}</span>
+                      {work.total && (
+                        <small className="text-sm text-neutral-500 dark:text-neutral-400">
                           {work.total}
                         </small>
-                      </div>
-                    )}
-                  </span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
+                    <Image
+                      className="object-cover dark:invert-[100%] dark:sepia-[0%] dark:saturate-[0%] dark:hue-rotate-[127deg] dark:brightness-[104%] dark:contrast-[100%]"
+                      width={44}
+                      height={44}
+                      src={work.logo}
+                      alt={work.company}
+                    />
+                  </div>
                 </div>
-                <div className="exp-logo flex rounded-sm overflow-hidden dark:flex items-center justify-center shrink-0">
-                  <Image
-                    className="object-cover dark:invert-[100%] dark:sepia-[0%] dark:saturate-[0%] dark:hue-rotate-[127deg] dark:brightness-[104%] dark:contrast-[100%]"
-                    width={50}
-                    height={50}
-                    src={work.logo}
-                    alt={work.company}
-                  />
-                </div>
-              </div>
 
-              {work.desc && (
-                <div className="mt-3 pr-20">
-                  {Array.isArray(work.desc) ? (
-                    work.desc.map((dsc, idx) => (
-                      <p
-                        className="font-normal text-sm md:text-lg text-neutral-600 dark:text-neutral-50"
-                        key={idx}
-                      >
-                        {dsc}
-                      </p>
-                    ))
-                  ) : (
-                    <p className="font-normal text-sm md:text-lg text-neutral-600 dark:text-neutral-50">
-                      {work.desc}
-                    </p>
-                  )}
-                </div>
-              )}
-            </div>
-          </GridListItem>
-        ))}
-      </GridList>
+                {work.desc && (
+                  <div className="mt-4 space-y-3 text-sm leading-7 text-neutral-600 dark:text-neutral-300 md:text-base">
+                    {Array.isArray(work.desc) ? (
+                      work.desc.map((dsc, idx) => <p key={idx}>{dsc}</p>)
+                    ) : (
+                      <p>{work.desc}</p>
+                    )}
+                  </div>
+                )}
+              </div>
+            </GridListItem>
+          ))}
+        </GridList>
+      </Container>
     </div>
   );
 };

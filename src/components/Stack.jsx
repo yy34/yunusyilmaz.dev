@@ -1,26 +1,33 @@
 import React from "react";
 import SectionIntro from "./SectionIntro";
-import Container from "./Container";
+import Section from "./Section";
 import TechList from "./TechList";
-import { Frontend, Backend, Others, WantToLearn } from "../data/Tools";
+import { Frontend, Backend, Others } from "../data/Tools";
 
 const Stack = () => {
   return (
-    <div className="relative mt-12 pt-12 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-      <SectionIntro
+    <Section
+      intro={
+        <SectionIntro
         eyebrow="The following is my on-the-go app stack for designing, coding, managing & all.."
         title="Tech Stack"
-      ></SectionIntro>
-
-      <Container>
+        />
+      }
+      contentClassName="space-y-10"
+    >
+      <div>
         <SectionIntro smaller>Front End</SectionIntro>
-        <TechList techStack={Frontend} />
+        <TechList className="mt-6" techStack={Frontend} />
+      </div>
+      <div>
         <SectionIntro smaller>Back End</SectionIntro>
-        <TechList techStack={Backend} />
+        <TechList className="mt-6" techStack={Backend} />
+      </div>
+      <div>
         <SectionIntro smaller>Others</SectionIntro>
-        <TechList techStack={Others} />
-      </Container>
-    </div>
+        <TechList className="mt-6" techStack={Others} />
+      </div>
+    </Section>
   );
 };
 
