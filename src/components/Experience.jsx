@@ -17,7 +17,7 @@ const Experience = () => {
               title={work.total !== undefined ? work.total : "Present"}
             >
               <div className="mx-auto max-w-2xl rounded-2xl border border-neutral-200 bg-white px-5 py-5 dark:border-neutral-800 dark:bg-neutral-950/60 md:px-6 md:py-6">
-                <div className="flex gap-4 items-center justify-between">
+                <div className="flex items-start justify-between gap-3 sm:items-center sm:gap-4">
                   <div>
                     <span className="text-sm text-neutral-500 dark:text-neutral-400 md:text-base">
                       {work.company}

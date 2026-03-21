@@ -12,10 +12,14 @@ const Socials = () => {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-medium tracking-tight text-neutral-600 transition-colors hover:text-neutral-950 dark:text-neutral-300 dark:hover:text-neutral-50"
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-1 py-2 text-sm font-medium tracking-tight text-neutral-600 transition-colors hover:text-neutral-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:text-neutral-300 dark:hover:text-neutral-50 dark:focus-visible:ring-neutral-50 dark:focus-visible:ring-offset-neutral-950"
           >
             <span>{social.label}</span>
-            <Icon icon="ph:arrow-up-right-light" className="h-3.5 w-3.5" />
+            <Icon
+              icon="ph:arrow-up-right-light"
+              className="h-3.5 w-3.5"
+              aria-hidden="true"
+            />
           </Link>
         </li>
       ))}

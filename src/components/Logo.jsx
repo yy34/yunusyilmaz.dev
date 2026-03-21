@@ -12,9 +12,9 @@ const Logo = ({ href, className, children, ...props }) => {
     );
   }
   return (
-    <h2 className={clsx("cursor-pointer duration-300", className)} {...props}>
+    <div className={clsx("cursor-pointer duration-300", className)} {...props}>
       {inner}
-    </h2>
+    </div>
   );
 };
 
