@@ -27,7 +27,6 @@ All copy lives in typed modules under `src/content/` — no component changes ne
 
 - `profile.ts` — name, role, email, social links, education
 - `experience.ts` — roles with `YYYY-MM` periods; durations and "N+ years" are computed (pages revalidate daily)
-- `stack.ts` — tech stack groups
 - `projects.ts` — published projects (the page shows a short note while empty)
 
 ## Structure
