@@ -1,38 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# yunusyilmaz.dev
 
-## Getting Started
+Personal site of Yunus Yılmaz — Next.js 16 (App Router, fully static), React 19, TypeScript, HeroUI v3 and Tailwind CSS v4.
 
-First, run the development server:
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Script              | What it does                                 |
+| ------------------- | -------------------------------------------- |
+| `npm run dev`       | Dev server on http://localhost:3000          |
+| `npm run build`     | Production build (every route is static)     |
+| `npm run lint`      | Biome lint + format check                    |
+| `npm run format`    | Apply Biome fixes                            |
+| `npm run typecheck` | `tsc --noEmit` (TypeScript 7)                |
+| `npm test`          | Vitest unit tests                            |
+| `npm run check`     | All of the above — the same gate CI runs     |
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+`.npmrc` sets `min-release-age=3`, so npm never resolves a version published less than three days ago.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Editing content
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+All copy lives in typed modules under `src/content/` — no component changes needed:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `profile.ts` — name, role, email, social links, education
+- `experience.ts` — roles with `YYYY-MM` periods; durations and "N+ years" are computed (pages revalidate daily)
+- `stack.ts` — tech stack groups
+- `projects.ts` — published projects (the page shows a short note while empty)
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/          routes, metadata, OG image, sitemap, robots
+  components/   UI (HeroUI: Accordion, Button, Toast)
+  content/      site data
+  lib/          date helpers (+ tests)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Theme tokens are in `src/app/globals.css`; they override HeroUI's default theme with the site's neutral palette. Only the HeroUI component styles in use are imported.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Security headers (CSP, HSTS, Permissions-Policy) are set in `next.config.ts`. `/contact` permanently redirects to `/about#contact`.
