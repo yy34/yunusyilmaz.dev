@@ -42,7 +42,8 @@ export default function AboutPage() {
         <div className="mt-4 space-y-4 text-[17px] leading-[1.75]">
           <p>
             I'm a software engineer based in {profile.location} with {years}+ years of experience. I
-            currently work at {profile.company}.
+            currently work at {profile.company}. I mostly work with TypeScript, React and Next.js,
+            and I've shipped production code in Vue and Angular.
           </p>
           <p>
             I build scalable, secure and reliable web applications across different frameworks and

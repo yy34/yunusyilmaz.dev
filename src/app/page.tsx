@@ -4,7 +4,6 @@ import { ExternalLink, MoreLink, PrimaryLink } from "@/components/links";
 import { enterStep, Section } from "@/components/section";
 import { roles } from "@/content/experience";
 import { profile, socials } from "@/content/profile";
-import { stack } from "@/content/stack";
 import { yearsSince } from "@/lib/dates";
 import { toExperienceItems } from "@/lib/experience";
 
@@ -40,26 +39,6 @@ export default function HomePage() {
         <div className="mt-3">
           <MoreLink href="/about">See full experience</MoreLink>
         </div>
-      </Section>
-
-      <Section title="Tech Stack" step={3}>
-        <dl className="divide-y divide-border border-y border-border">
-          {stack.map((group) => (
-            <div key={group.label} className="grid gap-2 py-3.5 sm:grid-cols-[110px_1fr] sm:gap-3">
-              <dt className="pt-1 text-sm text-muted">{group.label}</dt>
-              <dd className="flex flex-wrap gap-1.5">
-                {group.items.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full bg-default px-2.5 py-1 text-[13px] transition-colors duration-200 hover:bg-foreground hover:text-background"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </dd>
-            </div>
-          ))}
-        </dl>
       </Section>
     </>
   );
