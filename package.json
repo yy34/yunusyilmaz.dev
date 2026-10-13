@@ -1,7 +1,8 @@
 {
-  "name": "personal-website",
-  "version": "0.1.0",
+  "name": "yunusyilmaz.dev",
+  "version": "2.0.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "24.x"
   },
@@ -9,28 +10,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.0.0",
-    "autoprefixer": "10.4.14",
-    "next": "14.2.35",
-    "next-themes": "^0.2.1",
-    "postcss": "8.4.22",
-    "postcss-nesting": "^11.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.1",
-    "clsx": "^2.0.0",
-    "eslint": "8.47.0",
-    "eslint-config-next": "14.2.35",
-    "framer-motion": "^10.16.0",
-    "react-icons": "^4.10.1"
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build"
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.0",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.37",
-    "typescript": "5.0.4"
+    "@biomejs/biome": "2.5.15",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2",
+    "vitest": "5.0.3"
+  },
+  "dependencies": {
+    "@heroui/react": "3.2.6",
+    "@heroui/styles": "3.2.6",
+    "@vercel/analytics": "2.0.1",
+    "@vercel/speed-insights": "2.0.0",
+    "lucide-react": "1.55.0",
+    "next": "16.4.0",
+    "next-themes": "0.4.6",
+    "react": "19.3.0",
+    "react-aria-components": "1.22.1",
+    "react-dom": "19.3.0"
   }
 }
